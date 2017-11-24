@@ -13,6 +13,25 @@ a {
   text-decoration: none;
 }
 
+@keyframes clock-minute {
+  0% { transform: translate(3px, 8px) rotate(0deg) }
+  100% { transform: translate(3px, 8px) rotate(360deg) }
+}
+
+.minutes {
+  transform-origin: 0px 4px;
+  animation: clock-minute 1s linear infinite;
+}
+
+@keyframes clock-hour {
+  0% { transform: translate(8px, 4px) rotate(0deg) }
+  100% { transform: translate(8px, 4px) rotate(360deg) }
+}
+
+.hours {
+  transform-origin: 20.5px 5.5px;
+  animation: clock-minute 6s linear infinite;
+}
 
 .outer {
   align-items: center;
