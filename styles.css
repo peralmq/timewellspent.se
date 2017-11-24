@@ -1,0 +1,50 @@
+body {
+  background: #fff;
+  color: #484848;
+  font-family: Helvetica, sans-serif;
+  font-size: 3vw;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.outer {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.inner {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex: 1;
+  flex-flow: row wrap;
+  min-height: 24em;
+}
+
+.logo {
+  flex: 1 100%;
+  margin: auto 4em;
+}
+
+.description {
+  flex: 1 100%;
+  font-size: 3.2vw;
+  text-align: center;
+}
+
+.contact {
+  flex: 1 50%;
+  text-align: right;
+}
+
+.social {
+  flex: 1 50%;
+}
