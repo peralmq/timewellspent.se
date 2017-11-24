@@ -13,6 +13,7 @@ a {
   text-decoration: none;
 }
 
+
 .outer {
   align-items: center;
   display: flex;
@@ -31,7 +32,12 @@ a {
 
 .logo {
   flex: 1 100%;
-  margin: auto 4em;
+}
+
+.logo svg {
+  display: block;
+  margin: auto;
+  width: 80%;
 }
 
 .description {
@@ -47,4 +53,37 @@ a {
 
 .social {
   flex: 1 50%;
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+  .inner {
+    min-height: 0em;
+  }
+
+  .logo {
+    flex: 1 40%;
+  }
+
+  .logo svg {
+      width: 60%;
+  }
+
+  .description {
+    flex: 1 100%;
+    order: 4;
+  }
+
+  .contact,
+  .social {
+    font-size: 2vw;
+  }
+
+  .contact {
+    flex: 1 26%;
+  }
+
+  .social {
+    flex: 1 34%;
+  }
 }
